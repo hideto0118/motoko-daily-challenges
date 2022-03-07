@@ -1,4 +1,6 @@
+import Debug "mo:base/Debug";
 import Array "mo:base//Array";
+
 
 actor {
 
@@ -64,8 +66,7 @@ actor {
         var counter = 0;
         if ( array_num.size() == 0) {
             return 0
-        }
-        else {
+        } else {
             for(value in array_num.vals()) {
                 counter += value;
             };
@@ -74,6 +75,19 @@ actor {
     };
 
     // Challenge 8 : Write a function maximum that takes an array of natural numbers and returns the maximum value in the array. This function will returns 0 if the array is empty.
+    public func maximum(array_num : [Nat]) : async Nat {
+        var max_num = 0;
+        if ( array_num.size() == 0) {
+            return 0;
+        } else {
+            for (value in array_num.vals()) {
+                if (value > max_num){
+                    max_num := value;
+                };
+            };
+            return max_num;
+        };
+    };
 
     // Challenge 9 : Write a function remove_from_array that takes 2 parameters : an array of natural numbers and a natural number n and returns a new array where all occurences of n have been removed (order should remain unchanged).
 
