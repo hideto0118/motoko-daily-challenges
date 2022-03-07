@@ -6,6 +6,7 @@ service : {
   increment_counter: () -> (nat);
   is_even: (nat) -> (bool);
   maximum: (vec nat) -> (nat);
+  remove_from_array: (vec nat, nat) -> (vec nat);
   show_counter: () -> (nat);
   square: (nat) -> (nat);
   sum_of_array: (vec nat) -> (nat);

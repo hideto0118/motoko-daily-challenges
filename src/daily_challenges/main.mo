@@ -89,7 +89,20 @@ actor {
         };
     };
 
-    // Challenge 9 : Write a function remove_from_array that takes 2 parameters : an array of natural numbers and a natural number n and returns a new array where all occurences of n have been removed (order should remain unchanged).
+    // Challenge 9 : Write a function remove_from_array that takes 2 parameters 
+    // : an array of natural numbers and a natural number n and returns a new array 
+    // where all occurences of n have been removed (order should remain unchanged).
+    public func remove_from_array(array_num: [Nat], n : Nat) : async [Nat] {
+        let not_same_value = func(a : Nat) : Bool {
+            if (a != n) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        return(Array.filter<Nat>(array_num, not_same_value));
+    };
 
     // Challenge 10 :
 
