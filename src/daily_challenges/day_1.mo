@@ -115,24 +115,24 @@ actor {
     // Challenge 10
     // Watch this video on selection sort.
     // Implement a function selection_sort that takes an array of natural numbers and returns the sorted array .
-    public func selection_sort(a : [Nat]) : async () {
-        // var min_num : Nat = array_num[0];
-        let b: [var Nat] = Array.thaw<Nat>(a); 
+    // public func selection_sort(a : [Nat]) : async () {
+    //     // var min_num : Nat = array_num[0];
+    //     let b: [var Nat] = Array.thaw<Nat>(a); 
 
-        var ar : [var Nat] = [];
-        let i = 0 : Nat;
-        ar := Array.append<Nat>(ar, [i]);
+    //     var ar : [var Nat] = [];
+    //     let i = 0 : Nat;
+    //     ar := Array.append<Nat>(ar, [i]);
         
-        for (i in Iter.range(0, b.size()-1)) {
-            let tmp = b[i];
-            for (j in Iter.range(i+1, b.size()-1)){
-                if(b[j]<b[tmp]){
-                    tmp = j;
-                }
-            }
-            if(tmp != i)
+    //     for (i in Iter.range(0, b.size()-1)) {
+    //         let tmp = b[i];
+    //         for (j in Iter.range(i+1, b.size()-1)){
+    //             if(b[j]<b[tmp]){
+    //                 tmp = j;
+    //             }
+    //         }
+    //         if(tmp != i)
             
-            swap(b[i],b[tmp]);
-        };
-    };
+    //         swap(b[i],b[tmp]);
+    //     };
+    // };
 };
