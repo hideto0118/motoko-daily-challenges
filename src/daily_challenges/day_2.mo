@@ -21,10 +21,17 @@ actor {
     };
   };
 
-
 // Challenge 3
 // Write a function decimal_to_bits that takes a Nat n and returns a Text corresponding to the binary representation of this number.
 // Note : decimal_to_bits(255) -> "11111111".
+  public func decimal_to_bits(n : Nat) : async Text {
+    if(n < 8){
+      return(Nat8.toText(n));
+    }else{
+      return "";
+    };
+  };
+
 
 // Challenge 4 : Write a function capitalize_character that takes a Char c and returns the capitalized version of it.
 
