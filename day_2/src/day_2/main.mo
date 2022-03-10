@@ -4,6 +4,7 @@ import Iter "mo:base/Iter";
 import Nat8 "mo:base/Nat8";
 
 actor {
+
 // Challenge 1
 // Write a function nat_to_nat8 that converts a Nat n to a Nat8. Make sure that your function never trap.
   public func nat_to_nat8(n : Nat) : async Nat8 {
